@@ -1,0 +1,455 @@
+// What is JS ? 
+
+// scripting language, dynamic language, functional programming, synchronous language
+// single threaded language, JIT compilation, Client side , server side as well. Only Full stack
+// weakly typed language
+
+
+// Variables : 3 ways : let var const
+// data type : 2 - primitive , non primitive
+
+// Primitive 
+// Number 
+// String 
+// Symbol 
+// boolean
+// undefined 
+// null
+
+// Non primitive 
+// arrays 
+// objects
+
+
+// var e;
+
+
+// var a = 10;
+// var a = "John"
+
+// var = glocal scopic , redeclaration , reinitialize
+// let and const = block scope , No redeclaration
+
+// let d;
+
+
+// let b = 10;
+// b = "Doe"
+
+// // let  = reinitialize
+
+// const f;
+
+
+// const c = 123;
+// const = NO renintialize
+
+
+// brendan eich
+// JS engine, 
+// Execution Context : GEC , FEC
+// phases : 2 - memory allocation, code execution
+
+// MA 
+// memory will be allocated to variables : undefined 
+// function also gets memory allocted : actual value
+
+
+// CE
+// variables = actual value
+// functions = FEC, will pushed to call stack, the moment execution is over then, removed from call stack and excution will come back to GEC
+
+// hoisting 
+// 
+
+
+
+// JS engine = it helps you to execute JS code 
+// Chrome = V8
+// Explorer = chakra 
+// Mozilla = Spider monkey
+
+
+
+
+
+
+// for (var i=0; i < 5; i++) {
+//     setTimeout(() => {
+//         console.log(i);
+//     }, 1000);
+// }
+// task queue , event loop 
+
+// console.log(b);
+
+// const a = function() {
+    
+// }
+
+// console.log(a);
+
+
+// const a = function  (){
+
+// }
+
+// a()
+
+
+// Hoisting says that move all the decalaration and initialization of variables and definition of function at the top of the file so that we can reduce or avoid getting Refrence error because of memory allocation.
+
+// const a = 10;
+// console.log(a); //Reference error
+
+
+// variables declared using let and const are not accessible until and unless they are not initialized.
+
+
+// console.log(3 > 2 > 1);
+
+// variable = declaration , initialization
+// function = defining , invoking
+
+
+// function add() {
+
+// }
+
+
+// TDZ = let const 
+
+
+// closures , lexical environment
+// let a = 20;
+
+// function outer(){
+//     function inner (){
+//         console.log(a);
+//     }
+//     inner()
+// }
+
+// outer()
+
+
+
+
+// function one(a){ 
+//     console.log("Value",a)
+// }
+
+// one (2)
+
+
+// function one(a){ 
+//     return function(b, c){
+//         return a*b*c;
+//     }
+// }
+    
+// let value = one (2)(3, 10)
+
+// console.log(value);
+// one (2)(3)
+// function currying ()()()()
+
+
+
+// Objects = literals , object constructor
+// key value pair
+// var obj = {id: 1, name : "John"}
+
+// console.log(obj.name);
+// console.log(obj["name"]);
+
+// const value = Object.values(obj)
+
+// console.log(value)
+// console.log(Object.keys(obj))
+
+
+// const obj1 = new Object({id: 1, name:"Doe"})
+// obj1["age"]  = 24;
+// obj1.salary = 3000000;
+
+// var user = {
+//     id: 1,
+//     age: 24, 
+//     showDetails : function (id){
+//         console.log(id, this.age);
+//     }
+// }
+
+// user.showDetails(12)
+
+
+// let a=10;
+// let b = a++;
+// a++;
+// console.log(a,b);
+
+// Grading Plan
+// const marks = 78;
+// 100 - 80 : "A";
+// 80 - 60 : "B";
+// 60 - 40 : "C";
+// 40 - 10 : "Fail"
+
+
+// const marks=78;
+// switch(true){
+//     case (100> marks && marks>80):
+       
+//         console.log("A");
+//         break
+//     case  (80> marks && marks>60):
+        
+//         console.log("B");
+//         break
+//     case  (60> marks && marks>40):
+       
+//          console.log("C");  
+//          break    
+//     case  (40> marks && marks>0):
+//          console.log("D"); 
+//          break
+//     default: 
+//          console.log("e");            
+// }
+
+
+//////////////// day 2///////////////////////////////////////////////////////////////////////////
+
+
+// Operators and Decision Making , conditional statements
+
+// -> Arithmetic
+// -> logical 
+// -> comparison 
+// -> assignment 
+// -> ternary
+// -> Bitwise
+// -> Relational 
+// => Increment and decrement operator
+// typeof operator = data type of value
+
+// Arithmetic => + - * / % 
+// mathematical operations for the numbers 
+
+// let a = 10;
+// let b = 20;
+
+// console.log(b/a);
+
+
+// Logical operators => &&   ||   !
+// const value = !(true || false);
+// console.log(value);
+
+
+
+// ternary operator & Logical and operator : Conditional Rendering in React  
+
+// comparison operators => == === <=  >=  != !== 
+
+// console.log(2==="2");
+
+// console.log(typeof(2));
+
+// console.log( "2" !== "4" );
+
+
+
+// assignment = assign value to variable
+
+//ternary operator ? : 
+
+// const output = 10>3 ?"Greater" : "Smaller";
+// console.log(output);
+
+
+// Relational  >  <  >= <=
+
+
+
+// Increment operator Post increment  a++ , Pre increment  ++a
+// decrement operator Post decrement a--,Pre decrement  --a
+
+// ++ -- 
+
+// let a = 10; 
+// let b = a++;    //b = 10 , a = 11
+// a++;        //a = 12
+// console.log(a, b);
+
+// a++;
+// console.log(a++);
+// console.log(++a);
+
+
+
+// let a = 20;
+// let b = 32;
+// let c = b++;   // a = 20, b = 33, c = 32
+// a = b++;    // a = 33 , b = 34, c = 32
+// b = c++;    // a = 33 , b = 32 , c = 33
+// a = --c;    // a = 32 , b = 32 , c = 32
+// c = b--;    // a = 32 , b = 31 , c = 32
+
+// console.log(a, b, c);
+
+
+
+
+
+// Bitwise   &  |  ^  ~
+
+// Logic Gates 
+
+// &
+// 0 0 = 0
+// 0 1 = 0
+// 1 0 = 0
+// 1 1 = 1
+
+// let a = 3;      //0000 0011
+// let b = 5;      //0000 0101         0000 0001
+// console.log(a & b);
+
+// // |
+// 0 0 = 0
+// 0 1 = 1
+// 1 0 = 1
+// 1 1 = 1
+
+// let a = 3;      //0000 0011
+// let b = 5;      //0000 0101         0000 0111
+// console.log(a | b);
+
+// ^ 
+// 0 0 = 0
+// 0 1 = 1
+// 1 0 = 1
+// 1 1 = 0
+
+// let a = 3;      //0000 0011
+// let b = 5;      //0000 0101         0000 0110
+// console.log(a ^ b);
+
+// ~
+// 0 = 1
+// // 1 = 0
+// let a = 100;  //0000 0000 0011  => 1111 1111 1100
+// console.log(~a);
+
+
+
+
+/////////////////////////////////////////////////////DAY3////////////////////////////////////
+
+// CONTROL FLOW
+// conditional statements, loops 
+
+// if block , if-else , if-else ladder
+
+
+// Q : If number is odd then print ODD. 
+
+// a=13;
+// // if(a%2 != 0){
+// //     console.log("Value a " , a, " is odd.");
+// // }
+
+// (a%2 != 0) && (console.log("Value a "  , a , " is odd."))
+
+
+// logical &&
+
+
+// let a = 13;
+
+
+// if(a%2 == 0){
+//     console.log("EVEN");
+// }else{
+//     console.log("ODD");
+// }
+
+// Ternary operator 
+
+// (a%2 == 0) ? console.log("Even") : console.log("odd");
+
+// console.log("END");
+
+// let gender="MALE"
+
+// if (gender ==="male" || gender == "MALE") {
+//     console.log("MALE");
+// }else if (gender ==="female" || gender == "FEMALE"){
+//     console.log("FEMALE");
+// }else {
+//     console.log("OTHERS");
+// }
+
+//Week Plan
+// const num = 5;
+
+// switch(num){
+//     case 0:
+//         console.log("Monday");
+//         break;
+//     case 1:
+//         console.log("Tuesday");
+//         break;
+//     case 2:
+//         console.log("Wednesday");
+//         break;
+//     case 3:
+//         console.log("Thursday");
+//         break;
+//     case 4:
+//         console.log("Friday");
+//         break;
+//     case 5:
+//         console.log("Saturday");
+//         break;
+//     case 6:
+//         console.log("Sunday");
+//         break;
+//     default:
+//         console.log("Number not valid");
+// }
+
+
+
+// Grading Plan
+// 100 - 80 : "A";
+// 80 - 60 : "B";
+// 60 - 40 : "C";
+// 40 - 10 : "Fail"
+
+
+
+// const marks = 80;
+// switch (true) {
+//     case 100 > marks && marks > 80:
+//         console.log("A");
+//         break;
+//     case 80 >= marks && marks > 60:
+//         console.log("B");
+//         break;
+//     case 60 > marks && marks >= 40:
+//         console.log("C");
+//         break;
+//     case 40 > marks && marks > 0:
+//         console.log("D");
+//         break;
+//     default:
+//         console.log("Provide valid marks");
+//         break;
+// }
+
+
+
+
