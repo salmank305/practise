@@ -897,20 +897,19 @@ console.log(newfun);//whole function
 
 
 /*
-fl(); //whole fuction gives undefine
+fl();                //whole fuction gives undefine
 var f ="salman"
 var l = "khatik"
 function fl(){
     console.log(f,l);
 }
-
 */
 
-// var f ="salman"
-// var l = "khatik"
-// function fl(){
-//     console.log(f,l);
-// }fl();
+// fl(4);
+
+// function fl(num){
+//     console.log(num*4);
+// }
 
 
 //  myfun(10)   // function hoisting
@@ -920,6 +919,5 @@ function fl(){
 //    }
 //    myfun(7)
 
-function a(){
-    
-}
+
+
