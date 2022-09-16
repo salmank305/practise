@@ -919,3 +919,7 @@ function fl(){
 //     console.log(num*10); 
 //    }
 //    myfun(7)
+
+function a(){
+    
+}
