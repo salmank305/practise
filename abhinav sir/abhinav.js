@@ -1082,4 +1082,5 @@ switch (person){
 
 
 
-/*                                             LECTURE 7                                    */
+/*                                             LECTURE 7       ( git, git-hub )                           */
+
