@@ -921,3 +921,165 @@ function fl(){
 
 
 
+
+/*////////////////////////////////call back function*/////////////////////////////////////
+ 
+/*
+function outer(test1,test2){
+    let a =10;
+    let b =20;
+    console.log(a+b);
+    // here test1 and test2 function are call back function
+    test1();
+    console.log(' ');
+    test2();
+
+}
+
+outer(myName,friend);
+
+function myName(){
+    console.log('salman');
+    console.log('khatik');
+}
+
+
+function friend(){
+    console.log('abhi');
+    console.log('akash');
+}
+
+*/
+
+
+/////////////////premitive Type //////////////////////////////////////////////////////////////////
+/*
+// number 
+let a =10;
+
+//string 
+let name="salman"
+let lname ='khatik'
+
+//boolean 
+let x=true;
+let y=false;
+
+//undefine
+let un =undefined;
+
+//null
+let empty =null;
+
+//Bigint
+let big = 1000000000000000;
+
+//symbol
+let sy =Symbol('discription for symbol');
+*/
+
+
+
+//////////////////////////non premitive data////////////////////////////////////////
+
+/*
+// Arrays 
+let arr=[1,2,3,45,85]
+
+//object
+let obj={
+    name : 'abc',
+    roll  : 4,
+    male  : true,
+}
+
+*/
+
+
+////////////////////////////conditionals statement/////////////////
+
+/*
+let  num =20;
+if (num ===20){
+    console.log(num); //20
+}
+console.log(num===10);//flase 
+*/
+
+
+/*
+let num1='10';
+let num2=20;
+if(num1===num2){
+    console.log('true');
+}else{
+    console.log('false');
+}
+*/
+
+
+
+/*
+
+//in this code each line is check and if is match is match the condition somewere then print output and go to next line
+
+let person='instrucor';
+
+if(person==='instructor'){
+    console.log('person is instructor');
+}
+if(person==='instructor'){
+    console.log('person is cordinator');
+}
+if(person==='instructor'){
+    console.log('person is mentor');
+}
+*/
+
+
+/*
+
+// if condtion match print output and dont go to next line 
+
+let person='instructor';
+
+if(person==='instructor'){
+    console.log('person is instructor');
+}
+else if(person==='instructor'){
+    console.log('person is cordinator');
+}
+else if(person==='instructor'){
+    console.log('person is mentor');
+}else{
+    console.log('condition not match');
+}
+
+*/
+  
+
+
+///////////////////////////*switch case *///////////////////////////
+   
+/*
+let person = 'salman'
+switch (person){
+    case 'instructor':
+        console.log('person is instrutor');
+        break;
+    case 'salman':
+        console.log('person is salman');
+        break; 
+    case 'mentor':
+        console.log('person is mentor');
+        break;
+    default:
+        console.log('person is not match');
+}
+//  agar break nai used kiya to koi ek condition match hone ke bad sare console print honge 
+*/
+
+
+
+
+/*                                             LECTURE 7                                    */
