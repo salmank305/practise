@@ -1099,3 +1099,4 @@ switch (person){
 // to see all your commit msg use git log
 // to check out perticular thing u can check by command gitcheckout pest a number of which command u want to check.
 // git checkout 56bbb4adaa51caf3b0ec368acfb635e61b74b291
+// checkout se wapus aane ke liye (git checkout master)
