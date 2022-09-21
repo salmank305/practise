@@ -1084,3 +1084,17 @@ switch (person){
 
 /*                                             LECTURE 7       ( git, git-hub )                           */
 
+
+// installed git
+// git config --global user.name "salman305" 
+// git config --global user.email "-------@gmail.com"
+
+
+// create ur project
+// go inside ur project 
+// git init ====>(initial git in ur project ,its one time thing for perticular project)
+// make changes 
+// git add filename (or git add .)====> add all ur changes to staging
+//  git commit --m "write ur msg here what u change in that"
+// to see all your commit msg use git log
+
