@@ -1,1 +1,1 @@
-tikgit 
+ liye(e) git checkout master

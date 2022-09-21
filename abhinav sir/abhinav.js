@@ -1082,7 +1082,7 @@ switch (person){
 
 
 
-/*                                             LECTURE 7       ( git, git-hub )                           */
+/* /////////////////////////////////           LECTURE 7       ( git, git-hub )                           *////////////////////////////////////////
 
 
 // installed git
