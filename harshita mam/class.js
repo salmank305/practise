@@ -566,21 +566,4 @@ console.log(temp);
 
 
 
-// let arr=[1,2,3,4,'salman',{a:'khatik',b:1}]
-// console.log(arr);
 
-// const arr=[1,2,3,4]
-// arr.forEach((element)=>{
-//     console.log(element);
-// });
-
-
-const num=[
-   { id:1, name:"salman", age:20, salary:25000},
-   { id:2,name:"kkkk", age:24,salary:10000},
-   { id:3,name:"qqq", age:27,salary:20000},
-];
-
-
-const output =num.forEach(this.value=>this.value[2])*10000;
-console.log(output);
