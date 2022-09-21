@@ -1097,4 +1097,4 @@ switch (person){
 // git add filename (or git add .)====> add all ur changes to staging
 //  git commit --m "write ur msg here what u change in that"
 // to see all your commit msg use git log
-
+// to check out perticular thing u can check by command gitcheckout pest a number of which command u want to check
