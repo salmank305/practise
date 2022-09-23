@@ -1123,4 +1123,4 @@ function calculater(){
  mul();
  add()
 }
-calculater()
+calculater();
