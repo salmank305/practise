@@ -600,7 +600,7 @@ console.log(temp);
 
 // arr.shift();    // remove from the start
 // console.log(arr);
-// let arr=[1,23,3,45,6]
+
 // arr.reverse()
 // console.log(arr);
 
@@ -642,19 +642,28 @@ console.log(temp);
 
 // const value = a(23);
 // console.log(value, a(23));
-/*
+
 //input
-const user = [
-    {id:1, name:"John", age:20, salary:25000}, 
-    {id:2, name:"Doe", age:24, salary:10000}, 
-    {id:3, name:"Harsh", age:27, salary:20000}
-]
+// const user = [
+//     {id:1, name:"John", age:20, salary:25000}, 
+//     {id:2, name:"Doe", age:24, salary:10000}, 
+//     {id:3, name:"Harsh", age:27, salary:20000}
+// ]
 // ques
 // whereever age is less than 25, increment salary by 10000
 
 // output
-const newUser = [
-    {id:1, name:"John", age:20, salary:35000}, 
-    {id:2, name:"Doe", age:24, salary:20000}
-]
-*/
+// const newUser = [
+//     {id:1, name:"John", age:20, salary:35000}, 
+//     {id:2, name:"Doe", age:24, salary:20000}
+// ]
+
+// const newUser =user.filter(value=>value.age<25)
+//  const newvalue = newUser.map(value=>value.age).user.salary+10000;
+
+//constraint one line only
+
+//  spred operator is help to destructure the structure element of array and object so that you acess its elements individaully
+
+
+

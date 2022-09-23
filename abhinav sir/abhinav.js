@@ -1100,3 +1100,27 @@ switch (person){
 // to check out perticular thing u can check by command gitcheckout pest a number of which command u want to check.
 // git checkout 56bbb4adaa51caf3b0ec368acfb635e61b74b291
 // checkout se wapus aane ke liye(e) git checkout master
+
+
+
+
+/* ////////////////////////////////////////     LECTURE 8 CLOSURE ///////////////////////////////////////////////////*/
+
+
+// closure => function along with its lexical or parrent  scope forms closure
+
+//A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). 
+// In other words, a closure gives you access to an outer function's scope from an inner function.
+
+function calculater(){
+    var  a=10;
+    function mul(){
+        console.log(a);
+    }
+    function add(){
+        console.log(a);
+    }
+ mul();
+ add()
+}
+calculater()
