@@ -236,3 +236,88 @@ console.log(employeeWithHighest)
 // // car.slice(1,3)
 // console.log(car.splice(1,0),car);
 
+// set TimeRanges=>
+// function x(){
+//     for(let i=1;i<=5;i++){
+//         setTimeout(function(){
+//             console.log(i);
+//         },i*1000)
+//     }
+// }
+// x()
+
+// setTimeout allows us to run a function once after the interval of time.
+// setInterval allows us to run a function repeatedly, starting after the interval of time, then repeating continuously at that interval
+
+// NAN property
+// console.log(isNaN("12"));
+
+
+// console.log(isNaN('Hello')); 
+
+
+
+// imidiate invoke
+
+// (function(){
+//     console.log("salman");
+// })();
+
+
+//  template literals,
+// let a="salman"
+// let b=10;
+// console.log(`${a} ${b}`);
+
+
+// arrow
+
+// let hello = () => {
+// console.log("Hello World!");
+// }
+// hello();
+
+// "use strict"
+//  a=10;
+// console.log(a);
+
+
+
+// let str = "Newton"
+// let  temp = str.split("").reverse().join("");
+// console.log(temp);
+
+
+
+// A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
+
+
+// function mulit(){
+//     var a=10;
+   
+//     function printA(){
+      
+//         console.log(a);     //50
+//     }
+//     function printB(){
+//         let b=20
+//         console.log(b);
+//     }
+
+//   printA();
+//   printB()
+//  }
+// mulit();
+
+
+const a=[1,1,2,3,3,3,4,5]
+
+
+let b=[];
+for(let i=0;i<a.length;i++){
+    if (b.includes(a[i]))
+    continue;
+    b.push(a[i]);
+   
+}
+console.log(b);

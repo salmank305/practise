@@ -1111,7 +1111,7 @@ switch (person){
 
 //A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). 
 // In other words, a closure gives you access to an outer function's scope from an inner function.
-
+/*
 function calculater(){
     var  a=10;
     function mul(){
@@ -1124,3 +1124,63 @@ function calculater(){
  add()
 }
 calculater();
+*/
+
+/*
+ function mulit(){
+    var a=10;
+     var  b=20;  // takes garbej collected bcz im not using the variable b 
+    function printA(){
+        console.log(a);
+    }
+   function printB(){
+         console.log(b);
+   }
+   return printA
+   
+  
+ }
+ let result=mulit();
+ console.log(result);
+ result()
+
+*/
+
+
+ /*
+ function mulit(){
+    var a=10;
+     var  b=20; 
+     var a= a+b; 
+    function printA(){
+         a=a+b;
+        console.log(a);     //50
+    }
+
+  printA();
+ }
+mulit();
+*/
+
+
+///////////////////////////////////          LECTURE 9             //////////
+
+// assinment question=> closure in class-order count -js closure
+/*let generateOrder = function (starting){
+    var c =0;
+     function count(){
+        c = c+1;               //c=i+1
+      console.log("Total order="+c)
+      }
+    
+ return count
+}
+// end the code here as ns required
+
+let result = generateOrder()
+console.log(result)
+result();
+result()
+result()*/
+
+///////////////////////////arrays///////////////////////
