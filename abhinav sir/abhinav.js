@@ -1184,3 +1184,38 @@ result()
 result()*/
 
 ///////////////////////////arrays///////////////////////
+// method to create Array
+/*
+let arr =[1,2,3,4]   //arr limitto add element  is 2^32-1
+ console.log(arr);
+let ans = arr.push(10); //push returns updated length
+console.log(ans);    // it print length of array
+console.log(arr);   //modify the main arr
+console.log(arr[arr.length-1]);  // it gives last num which is push into arr.
+
+arr.pop();
+console.log(arr);
+// pop method  removed the element from arr and it also returns the removed elements
+let removed =arr.pop(); //pop returns last elemet which is pop
+console.log(removed); // last element which is removerd is 4
+console.log(arr);
+
+// let arr1 = new Array(3)  //length =1
+// arr1[0]=10;
+// arr1[1]=20;
+// arr1[2]=25
+// console.log(arr1);
+*/
+
+
+
+///////////////////properties of arrays///////////////
+/* 1.length 
+  2. accesing the values in array using index
+  3. prototype - here properties and method can be added for arrays 
+  4. constructer creates an arrays 
+*/
+
+
+
+//////////////////////////////////////// lecture 10 /////////////////////

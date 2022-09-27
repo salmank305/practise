@@ -310,15 +310,15 @@ console.log(employeeWithHighest)
 // mulit();
 
 
-const a=[1,1,2,3,3,3,4,5]
+// const a=[1,1,2,3,3,3,4,5]
 
 
-let b=[];
-for(let i=0;i<a.length;i++){
-    if (b.includes(a[i]))
-    continue;
-    b.push(a[i]);
+// let b=[];
+// for(let i=0;i<a.length;i++){
+//     if (b.includes(a[i]))
+//     continue;
+//     b.push(a[i]);
    
-}
-console.log(b);
+// }
+// console.log(b);
 

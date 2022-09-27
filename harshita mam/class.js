@@ -586,7 +586,7 @@ console.log(temp);
 
 // push and pop = add/remove elements at the end of array
 // shift and unshift = start of the array
- let arr = [1, 23, 43.3,5]
+//  let arr = [1, 23, 43.3,5]
 // console.log(arr);
 
 // arr.push(98);
@@ -595,11 +595,11 @@ console.log(temp);
 // arr.pop();
 // console.log(arr);
 
-arr.unshift(98);    //add at the start
-console.log(arr);
+// arr.unshift(98);    //add at the start
+// console.log(arr);
 
-arr.shift();    // remove from the start
-console.log(arr);
+// arr.shift();    // remove from the start
+// console.log(arr);
 
 // arr.reverse()
 // console.log(arr);
@@ -788,19 +788,19 @@ console.log(arr);
 // // vw = arguments, variables used at the time of execution
 
 
-let a = 30;
-function outer (){
-    let a = 10;
-    function inner (){
-        // let a = 20;
-        function innerChild(){
-            console.log(a);
-        }
-    }
-    inner()
-}
+// let a = 30;
+// function outer (){
+//     let a = 10;
+//     function inner (){
+//         // let a = 20;
+//         function innerChild(){
+//             console.log(a);
+//         }
+//     }
+//     inner()
+// }
 
-outer()
+// outer()
 
 
 // closure : if a variable that you are trying to access in a function, it will look into its 
