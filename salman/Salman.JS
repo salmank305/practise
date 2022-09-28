@@ -322,6 +322,17 @@ console.log(employeeWithHighest)
 // }
 // console.log(b);
 
-const points = [40, 100, 1, 5, 25, 10];
-points.sort((a, b)=> a-b);
-console.log(points);
+// let  arr = [40, 100, 1, 5, 25, 10];
+// arr.sort((a, b)=> a-b);
+// console.log(arr);
+
+
+// default 
+// function av(a,b){
+  
+// let c=a*b
+
+// }
+
+// av(12,12)
+// console.log(c);

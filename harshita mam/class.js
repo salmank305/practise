@@ -666,7 +666,7 @@ console.log(temp);
 //  spred operator is help to destructure the structure element of array and object so that you acess its elements individaully
 
 
-//*/                        DAY -6                  ///////////////////////////////////////////////////////////////////////////////
+//*///////////     //                   DAY -6                  ///////////////////////////////////////////////////////////////////////////////
 // //functions
 // // any block of code which is being used multiple times then rather than writing it 
 // // again and again better to create a function and then execute the function for that.
@@ -767,14 +767,6 @@ console.log(temp);
 // }
 
 
-
-
-
-
-
-
-
-
 // // function add (x, y){
 // //     console.log(x,y);
 // // }
@@ -819,3 +811,112 @@ console.log(temp);
 
 // add();
 // console.log(b);
+
+
+
+////////////////////////////////   DAY 7   //////////////////////////
+
+
+
+// if you are accessing any variable before its initialization then it will throw an error : Reference error
+// Reference error 
+// type error
+// syntax error
+
+// Hoisting : to avoid ref error we move the declaration of variable and functions on the top 
+
+// var a = "Name";
+// console.log(a.reverse()); // it gives type error 
+
+
+
+//  ### Rest parameter, rest operator => its gives structured array
+//rules: 
+// it will always be used as a function parameter.
+// it will always be the last parameter
+
+/*
+function structure(a,b,...c){   // rest parameter / rest operator
+    console.log(a,b,c);
+}
+structure(1,2,3,4,4,5,6,7, "salman");
+
+function rest(a,b,...c){
+    return a,b,c;            // returns rest parameter only 
+}
+let ans = rest(1,2,3,4,65,6,"salman")
+console.log(ans);
+*/
+
+
+// ### spread operator => its is used to destructure the structure element of non premitive data like arrays and object so that you acess its elements individaully
+/*
+const arr = [1,2,3,4,45,5,6,6,4,5,46];
+let arr2 = ["salman", "khatik", ...arr,10,1,5];
+console.log(arr2);
+*/
+
+
+// default parameters in functions
+//es5 version of JS
+/*
+function aRect(p, q){
+    let leng = p || 15;
+    let wid = q || 15;
+    return leng*wid;
+}
+const ans = aRect()
+console.log(ans);
+
+//es6 version of JS
+function areaRect(a = 10, b = 12){
+    let length = a;
+    let width = b;
+    return length*width;
+}
+const value = areaRect()     //areaRect(15,15) we can pass argumnet like this also
+console.log(value);
+*/
+
+
+// ######### IIFE - immediately invoked function expression.############
+// secrity purpose of variables or data , variables declared inside the function will not be accessible outside.
+// we want that the moment files gets executed , the function should be invoked.
+// anonymous function
+// at the time of definition only you will execute the function as well.
+/*
+(function(){
+    let z=10;
+    console.log(z);
+})();
+
+
+(function (x,y){
+    let a = 10;
+    console.log("Value of a: ", a, x, y);
+})(10, 12);
+*/
+ 
+/*
+temp()            // ReferenceError: temp is not defined
+console.log(a);
+*/
+
+  // ##############  try and catch
+/*
+try{
+    console.log();
+    let a = 10;
+    console.log(a);
+    console.log(b);   // if line 911 is commentout then try block is print and catch block is not work
+    console.log("try block");
+}catch(error){
+    console.log("Catch block");   // this block work bcz b is not defined 
+}
+
+// try-catch block basically helps you to handle the generic errors that can 
+// come up in the JS code like Referece error or type error or the errors 
+// coming at run time 
+
+// the moment any error will come in try block , it will move the execution to catch block 
+*/
