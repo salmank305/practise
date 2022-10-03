@@ -842,7 +842,7 @@ function structure(a,b,...c){   // rest parameter / rest operator
 structure(1,2,3,4,4,5,6,7, "salman");
 
 function rest(a,b,...c){
-    return a,b,c;            // returns rest parameter only 
+    return [a,b,c];           
 }
 let ans = rest(1,2,3,4,65,6,"salman")
 console.log(ans);
@@ -920,3 +920,313 @@ try{
 
 // the moment any error will come in try block , it will move the execution to catch block 
 */
+
+
+
+///////////////////////////////////////// day 8/////////////////////////////////////////////////////////////////////
+
+
+
+
+// callback function : function which gets passed as an argument to another function 
+
+/*
+function add (callbackFun){    //parameters
+    callbackFun()
+}
+
+function b (){
+    console.log("B");
+}
+
+add(b)       // arguments
+*/
+
+
+
+//objects 
+
+/*
+function calculateTotalAmount(...c){
+    console.log(c);
+    const total = c.reduce((acc, cur)=> acc = acc + cur, 0);
+    return total
+}
+
+
+
+let salariesPaidToAllDept = {
+    "HR" : 300000,
+    "IT" : 303000020312,
+    "Sales" : 234567898765,
+}
+
+const value = calculateTotalAmount(salariesPaidToAllDept.HR , salariesPaidToAllDept.IT, salariesPaidToAllDept.Sales)
+
+console.log(value);
+*/
+
+
+
+
+//objects 
+// it is a non primitive data type, which stores data in key-value pair
+// 3 ways 
+//object literals
+// let obj = {
+//     id : 13456789,
+//     name : "John",
+//     pincode : 305901,
+//     city : "Ajmer"
+// }
+
+// //object constructor function
+// let obj2 = new Object({name : "raj"});
+// obj2.id = 23;
+// obj2.district = "Ajmer";
+// obj2["state"] = "rajasthan";
+
+
+// console.log(obj2, obj);
+
+
+// //own constructor function
+// function Employee (name , age){
+//     {
+//         this.name = name,
+//         this.age = age
+//     }
+// }
+
+
+// let emp1 = new Employee("John", 24)
+// emp1.salary = 30000;
+// let emp2 = new Employee("Doe", 30)
+// let emp3 = new Employee("Smith", 27)
+// console.log(emp1, emp2, emp3);
+
+
+
+// let obj = {
+//     id : 1,
+//     name : "John",
+//     pincode : 305901,
+//     city : "Ajmer"
+// }
+
+
+// let obj2 = {
+//     name : "John",
+//     salary : 305901,
+// }
+
+// obj2.age= 25
+
+
+// let emp1 = {
+//     rollno : 101,
+//     color : "black"
+// }
+
+// // Object.keys
+// // Object.values
+
+// console.log("Object = ", Object.keys(emp1), Object.keys(obj2));
+// console.log("Object = ", Object.values(emp1), Object.values(obj2));
+// console.log(emp1.color);
+// let arr = [1,2,3,4]
+// console.log(arr);
+
+
+// Array 
+// Object 
+// Function
+// String 
+
+
+// All the inbuilt function that we use are defined 
+// inside their parent constructor function 
+
+
+// let arr = [23,5,6,67]
+
+// console.log(arr);
+
+// Prototype is an object to access the parent constructor function. which will help you to access all the inbuilt functions defined inside the parent constrcutor function.
+
+
+
+///////////////////////////////////////////// day 9 ///////////////////////////////////////////////////////
+
+/*
+
+let obj = {
+    id : 1,
+    name : "John",
+    age : 24,
+    salary : 20000
+}
+
+for(let keys in Object.keys(obj)){
+    console.log(obj[keys], keys);
+}
+
+for(let value of obj){
+    console.log(value);
+}
+*/
+
+
+//call apply bind in JS.
+//gets used to invoke a function
+//when you are using call apply and bind at that time you dont have to define the object at the time of definition as a parameter.
+// then in that case to refer to that object you can use this keyword.
+// first argument will always be the object only which the functions needs .
+
+
+
+/* noraml method
+let user1 = {
+    id : 1,
+    name : "Doe",
+    age : 24,
+    dept : "HR"
+}
+
+let user2 = {
+    id : 2,
+    name : "Smith",
+    age : 25,
+    dept : "Sales"
+}
+
+function userDetails (data, a , b){
+    console.log( data.name + " is " + data.age +" years old and he is working in " + data.dept + " dept.", a, b);
+}
+userDetails(user1, 24, 12)
+*/
+
+
+/*
+ ///////////////////////////////////////// CALL METHOD////////////////////////
+let user1 = {
+    id : 1,
+    name : "Doe",
+    age : 24,
+    dept : "HR"
+}
+
+let user2 = {
+    id : 2,
+    name : "Smith",
+    age : 25,
+    dept : "Sales"
+}
+function userDetails (a , b){
+    console.log( this.name + " is " + this.age +" years old and he is working in " + this.dept + " dept.", a, b);
+}
+
+ userDetails.call(user1, 24, 12);
+
+// arguments other than main object will be passed will be passed individually
+*/
+
+/*
+  ////////////////////////// APPLY METHOD ////////////////////////
+let user1 = {
+    id : 1,
+    name : "Doe",
+    age : 24,
+    dept : "HR"
+}
+
+let user2 = {
+    id : 2,
+    name : "Smith",
+    age : 25,
+    dept : "Sales"
+}
+
+function userDetails (a , b){
+    console.log( this.name + " is " + this.age +" years old and he is working in " + this.dept + " dept.", a, b);
+}
+ userDetails.apply(user1,[24, 12]);
+
+// arguments other than main object will passed inside an array.
+
+*/
+
+
+/*
+/////////////////////////////////////////// bind method /////////////////////////////////////////////////
+let user1 = {
+    id : 1,
+    name : "Doe",
+    age : 24,
+    dept : "HR"
+}
+
+let user2 = {
+    id : 2,
+    name : "Smith",
+    age : 25,
+    dept : "Sales"
+}
+function userDetails (a , b){
+    console.log( this.name + " is " + this.age +" years old and he is working in " + this.dept + " dept.", a, b);
+}
+
+const newUserDetails = userDetails.bind(user2);
+
+newUserDetails(24, 12);
+//returns a new function with the reference of that object
+// smith is 25 years old and he is working in Sales dept.
+
+*/
+
+
+
+
+// JS inheritance : class based, prototype inheritance
+
+//Prototype inheritance 
+// let user1 = {
+//     id : 1,
+//     name : "Doe",
+//     age : 24,
+//     dept : "HR"
+// }
+
+// let user2 = {
+//     id : 2,
+//     name : "Smith",
+//     age : 25,
+//     dept : "Sales"
+// }
+
+// user2.company = "nS";
+
+// //__proto__ helps you to assign the value to the parent constructor function. 
+
+// user2.__proto__.zzzzz = 123;  //i am not setting up value inside the respective object, i am setting the value inside the parent constructor function.
+
+// user1.__proto__.displayUserDetails = function () {
+//     console.log(this.name, this.age, this.dept);
+// }
+
+// user1.salary = 200000
+
+// let arr1 = [1,2,3,4,4]
+// let arr2 = [1,2,3,5,4]
+
+// console.log(user2, arr1);
+// user2.displayUserDetails()
+
+
+
+// arr1.__proto__.display = function(){
+//     return 1;
+// }
+
+// console.log(arr1, arr2);
+// arr array Array 

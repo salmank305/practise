@@ -1219,3 +1219,191 @@ console.log(arr);
 
 
 //////////////////////////////////////// lecture 10 /////////////////////
+// let arr = [5,6,5,6,7]
+// delete arr[2];   //empyt the place not deleted 
+// console.log(arr); 
+ 
+/*
+//slice
+let arr =[1,2,3,4,65,6,87]
+let sliced =arr.slice(1,5)
+let sliced1 =arr.slice(2) //slice from index 2
+console.log(sliced); 
+console.log(sliced1);  
+console.log(arr); //it does not change orignal arr
+*/
+
+
+
+//splice
+/*
+let arr =[1,2,3,4,6,5,7,8]
+arr.splice(2,2);
+//1st param=> from index which is to be deleted 
+//2nd param=>  how many element to be deletd
+console.log(arr); //change orignal arr
+
+
+let ans =arr.splice(2,2,56,100)   //after 3rd param add element at 2nd index
+console.log(arr); 
+console.log(ans); //its gives deleted elemnt
+*/
+
+/*
+//Q. complit the sequence like [1,2,3,4,5,6,7,8,9,10,11]
+let arr2=[5,8,12,11]
+arr2.splice(0,0,1,2,3,4)
+arr2.splice(5,0,6,7)
+arr2.splice(8,1,9,10)
+console.log(arr2)
+
+*/
+ 
+//////////////////////////////map function /////////////
+// map returns newarr
+
+/*
+let arr = [3,5,4,94,584,9]
+let newArr = arr.map(function(valuesInArr){
+    return valuesInArr*5
+})
+console.log(newArr);
+*/
+
+
+
+/*
+bt usuig normal function
+let arr = [1,2,4,5]
+let newarr = arr.map(function (el){
+    return el*5  // el = all value in arr
+})
+console.log(newarr);
+*/
+
+/*
+//by using arrow function 
+let arr1 =[1,2,4,694,5]
+let nw = arr1.map((value)=>value+5)
+console.log(nw);
+console.log(arr1); // it is not change orignal array
+*/
+
+/////////////////////////////////////////lec 11////////////////////////
+
+// git hub
+
+
+
+/////////////////////////////////////////////lec -12////////////////////////////////
+
+// blank video
+
+
+///////////////////////////////////////  lec --13   ///////////////////////////////
+/*
+
+/////////////////////////////////   MAP FUNCTION //////////////////
+// Q.return values multiply bt its indexs
+// output=[0, 2, 8, 15, 12]
+let arr1 = [1,2,4,5,3]
+let newArr1 = arr1.map(function(valuesInArr,indexOfArr){
+    return valuesInArr*indexOfArr
+})
+console.log(newArr1);
+*/
+
+/*
+let arr1 = [1,2,4,5,3]
+let newArr1 = arr1.map(function(valuesInArr,indexOfArr,wholearr){
+    return arr; //last argument in function print whole arr
+})
+console.log(newArr1);
+*/
+
+
+/*
+let arr= [1,2,5,6]
+function multi(value){
+    return value*10
+}
+let ans =arr.map(multi)
+console.log(ans)
+*/
+
+/////////////////////////  forEach  ////////////////////////
+//   foreach doesn't  returns new arrays
+/*
+let arr1=[1,2,3,5,6]
+arr1.forEach(function(values,index,wholearr){
+  arr1[index]=values*10
+    
+})
+console.log(arr1);
+*/
+
+/*
+let arr1=[1,2,3,5,6]
+let newArr =[];
+arr1.forEach(function(v,i,a){
+    newArr.push(arr1[i]*v)   //1*1 2*2 3*3 5*5 6 *6
+
+})
+console.log(newArr); // [ 1, 4, 9, 25, 36 ]
+// console.log(arr1);
+
+*/
+
+////////////////////////// filter method ///////////////////////////
+/*
+//////////filter 
+let arr= [2011,2051,2022,2003,1999,1857];
+
+let a=arr.filter(function(el){
+    return el>2010;
+})
+console.log(a);
+
+// by arrow function 
+ let b= arr.filter((el)=>{
+    return el>2000
+})
+ console.log(b);
+*/
+
+/*
+// by arrow function 
+
+
+let arr= [2011,2051,2022,2003,1999,1857];
+let c =arr.map((el)=>el<2000) //if i uesd map it gives true or false 
+console.log(c);
+*/
+
+/////////////////////////find method ////////////////////////////
+/*
+let qualify = [15,17,23,67,34]
+
+let element =qualify.find(function(age){
+    return age>18
+})
+console.log(element); // 23 // it gives very first value which is greater than 18 i.e 23
+*/
+/////////////////// findIndex method ///////////////////////////////////
+/*
+let qualify = [15,1,23,67,34]
+
+let element =qualify.findIndex(function(age){
+    return age>18
+})
+console.log(element);//2
+*/
+ ///////////////////////////////////reduced method //////////////////
+ const arr =[4,6,8,3,15];
+const output=arr.reduce(function(max,curr){
+    if(curr>max){
+        max=curr;
+    }
+    return max
+},0)                   //initially max=0
+console.log(output);
