@@ -1399,6 +1399,7 @@ let element =qualify.findIndex(function(age){
 console.log(element);//2
 */
  ///////////////////////////////////reduced method //////////////////
+/*
  const arr =[4,6,8,3,15];
 const output=arr.reduce(function(max,curr){
     if(curr>max){
@@ -1407,3 +1408,57 @@ const output=arr.reduce(function(max,curr){
     return max
 },0)                   //initially max=0
 console.log(output);
+*/
+
+
+
+/////////////////////////// spread opreator ///////////////
+
+/*
+let arr1 =[1,2,3,4,9]
+console.log(...arr1); // it spred values 1 2 3 4 9
+let arr2=[10,11,12,13]
+arr1=[...arr1,...arr2]
+console.log(arr1);
+
+*/
+
+/*
+//  question print even number from 2 to 16 in an array
+// output = [2,4,6,8,10,12,14,16]
+
+let arr = [4,6,8,10,12]   //given
+//  ans=>
+let even = [2,...arr,14,16]
+console.log(even);
+*/
+
+
+/*
+let car ={
+    name :"tata",
+    wheel:4,
+    engine:"4stroke",
+    alive:false
+}
+
+let person ={
+    n :"sk",
+    wh:2,
+    en:false,
+    al:true
+}
+//console.log(...car); //we cant spred the object it gives type error
+
+let carPerson={...car, ...person,teachig:8}
+console.log(carPerson,);
+*/
+
+////////////////////////////// lec => 14 js constructor ////////////////
+
+// whys to create objects=>
+// 1. using object literals 
+// 2. using function constructor
+// 3. object.create()
+// 4. classes
+

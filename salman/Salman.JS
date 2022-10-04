@@ -606,3 +606,20 @@ document.getElementById("btn").remove();
 */
 
 
+
+// var a=10;
+// function test1(){
+// var x=1
+// console.log("salman");
+// }
+// var b=10;
+// function test2(){
+// var x=1
+// console.log("dkma");
+// }
+// var c=10
+// test2();
+// test1();
+
+
+
