@@ -1462,3 +1462,90 @@ console.log(carPerson,);
 // 3. object.create()
 // 4. classes
 
+/*
+// function constructor==>
+ function person (name,age, address){
+      this.name =name;
+      this.age =age;
+      this.address=address;
+      this.isPerson=true;
+      this.details='details are'+" "+age;
+      this.city=function(){
+        console.log("city is "+" "+address);
+      }
+ }
+ let abc =new person('salman',20,'nasik');
+ console.log(abc);
+ console.log(abc.address);
+ console.log(abc.details);
+ console.log(abc.isPerson);
+ abc.city();
+ console.log(abc.city);
+
+let pqr =new person('khatik',125,"mumbai")
+console.log(pqr);
+console.log(pqr.address);
+console.log(abc.details);
+pqr.city();
+console.log(pqr.city);
+
+//role of new keyword=>
+
+// 1. create an empty object=> {}
+// 2. refers the this to create object=> {everthing that in person function}
+// 3. return this => return to variable like abc
+
+let notusedNewkeyword =person('rani',20,'pune')
+console.log(notusedNewkeyword); //undefined
+
+*/
+
+
+// value and reference types
+/*
+// Value type:-
+let a=10;
+let b=10;
+console.log(a===b);
+b=20;
+console.log(a===b);
+let c=a;
+console.log(c);
+console.log(a);
+ a=100;
+ console.log(a);
+ console.log(c);
+
+let x='salman'
+let y=x;
+console.log(x);
+console.log(y);
+x='khatik'
+console.log(x);
+y=x; //to update y value
+console.log(y);
+*/
+
+
+/*
+//reference type:=
+let arr1=[1,2,3,4]
+let arr2=[1,2,3,4]
+console.log(arr1===arr2);//flase
+
+//bcz:- 
+//EC
+//arr1=memory address ref #aa100
+//arr2=memory address ref #4654 
+// it compre add which not equals
+
+let arr3=arr1;
+console.log(arr3===arr1);//true
+
+//bcz:- 
+//EC
+//arr3=memory address ref same memory adderess
+//arr1=memory address ref same memory adderess 
+arr3=[1,2,3,4]
+ console.log(arr3===arr1);//false
+ */

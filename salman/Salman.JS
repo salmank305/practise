@@ -623,3 +623,32 @@ document.getElementById("btn").remove();
 
 
 
+// let num1 =10;
+// let num2 =10;
+// console.log(num1===num2);
+
+
+// let a1=[1,2,3,4,5];
+// let a2=[1,2,3,4,5]
+// console.log(a1===a2);
+  
+/*
+
+home work 
+
+
+// function printv(alpha,time){
+//     setTimeout(()=>{
+//         console.log(alpha);
+
+//     },time)
+// }
+// printv("a",5000);
+
+
+// a-5sec
+// e -4
+// i -3
+// o-2
+// u-1
+*/
