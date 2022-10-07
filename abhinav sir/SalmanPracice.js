@@ -1549,3 +1549,116 @@ console.log(arr3===arr1);//true
 arr3=[1,2,3,4]
  console.log(arr3===arr1);//false
  */
+
+
+ /////////////////////////////// LEC -15 =>  js abstraction /////////////////
+  
+ 
+ /*                   //reference type:=
+ let arrOne=[3,4,5]
+  let arrTwo=[3,4,5]
+  let arrThree=arrOne
+
+  //memory address
+ // #10001-->[3,4,5]
+ // #10002-->[3,4,5]
+
+  //mem creation 
+  //arrOne =#10001
+  //arrTwo =#10002
+  //arrThree=#10001
+  console.log(arrOne ===arrTwo);  //false
+  console.log(arrOne ===arrThree); //true
+  console.log(arrOne);
+  arrOne=[1,2,3]         // create new memory 
+  console.log(arrOne ===arrThree); //false
+
+  console.log(arrOne);
+  console.log(arrTwo);
+  console.log(arrThree);
+
+  arrThree.push(100);
+  console.log(arrOne);  //100 push in both arrONE AND arrThree bcz 
+  console.log(arrThree); //  both point to same memory addresss
+*/
+
+
+////////////////////////  Abstraction  ////////////////////////////
+/*
+function person (name, yearOfBirth){
+    this.nameofperson=name;
+    this.yearOfBirthofperson=yearOfBirth
+//Abstraction-->
+    let CalculatAge = function(){
+        return 2022 - yearOfBirth
+    }
+    this.age =CalculatAge()
+
+    let clculateSum=function(){
+        return 10+50+yearOfBirth
+    }
+    this.sum=clculateSum()
+//<--Abstraction
+}
+
+let salman =new person('salman',1995);
+console.log(salman.nameofperson);
+console.log(salman.CalculateAge);
+console.log(salman.yearOfBirthofperson);
+console.log(salman.age);
+
+let Hamza =new person('khatik',2000);
+console.log(Hamza.nameofperson);
+console.log(Hamza.CalculateAge);
+console.log(Hamza.yearOfBirthofperson);
+console.log(Hamza.age);
+console.log(Hamza.sum);
+*/
+
+/*
+function person2 (name){
+    this.fname =name
+//Abstraction-->
+    let CalculatAge = function(){
+        return 2022 - 2000
+    }
+    this.age =CalculatAge()
+ //<--Abstraction
+}
+let arib = new person2("shaikh");
+console.log(arib.age);
+console.log(arib.fname);
+*/
+
+////////////////////////// MathObject //////////////////
+/*
+console.log(Math.PI);
+
+console.log(Math.SQRT2);
+
+console.log(Math.round(1.4));// round 1.4=1 & 1.6=2
+
+console.log(Math.floor(4.6));// below value 4
+
+console.log(Math.ceil(4.1)); //above value 5
+
+console.log(Math.random());//randamly generate number between 0 to 1
+console.log(Math.random());//randamly generate number between 0 to 1
+console.log(Math.random());//randamly generate number between 0 to 1
+console.log(Math.random()*50);//randamly generate number between 0 to 50
+// used of math.random used for generate OTP
+console.log(Math.ceil(Math.random()*1000000));
+console.log(Math.floor(Math.random()*100000));
+
+console.log(Math.trunc(8.7));//it removes fraction wala part
+
+console.log(Math.min(4,5,6,8,1,100,10));//1
+let arr1 = [15,25,4,100,65]
+console.log(Math.min(...arr1));//4
+
+console.log(Math.max(4,5,6,8,1,100,10));//100
+let arr = [15,25,4,5000,65]
+console.log(Math.max(...arr));//5000
+
+console.log(Math.pow(15,2));//225
+*/

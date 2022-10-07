@@ -1,6 +1,55 @@
+/*////////////////////////   FUNCTION ////////////////////
+// invoking
+let myFunction = (arg1, arg2) => {
+    console.log(arg1+arg2);
+    }
+    myFunction(50,10)
+  
+
+  // function expression return keward
+let x = function(x, y) {
+    return x / y;
+ }
+let a=x(5,5)
+console.log(a);
+*/
+
+
+/*
+function ab(s,d){
+    return s*d
+}
+let ans=ab(2,2)
+console.log(ans);
+
+/////////
+
+function aa(){
+    return 7*9
+}
+let ans2=aa()
+console.log(ans2);
+*/
+
+/*
+function ww(jk,hi){
+    console.log(jk*hi);
+    console.log(4);
+}
+ww(5,5) 
+*/  
+
+
+/*
+let x = myFunction(4, 3);   // Function is called, return value will end up in x
+console.log(x);
+function myFunction(a, b) {
+  return a * b;             // Function returns the product of a and b
+}
+*/
 
 // to many diff thing we cane write the same same code 
- /////////////////////////////////////////////////////filter method//////////////////////////////////////
+/////////////////////////////////////////////////////filter method//////////////////////////////////////
 /*
 const arr =[5,2,3,54]
 
@@ -42,10 +91,10 @@ console.log(output);
 //     let sum=0;
 //     for(let i=0;i<arr.length;i++){
 //         sum=sum+arr[i];
-        
+
 //     }
 //     console.log(sum);
-   
+
 // }
 // findSum([1,2,3,4,5])
 
@@ -60,7 +109,7 @@ const output = arr.reduce(function(accumulater,current){
 // current = represent the value in inside the reduced function arry like arr[i].
 // accumulater = it initial value like sum =0;
 */
-  
+
 /*
 // Q .find max value in array
 
@@ -149,7 +198,7 @@ const output = users.reduce((acc,curr)=>{
 console.log(output);
 
 */
-  
+
 // let arr = [ {name: 'John', id: 123, marks : 98 ,result:"n"},
 //           {name: 'Baba', id: 101, marks : 23, result:"n" },
 //           {name: 'yaga', id: 200, marks : 45 ,result:"n" },
@@ -231,7 +280,7 @@ console.log(employeeWithHighest)
 // when u want to access individual values of non primitive data type =spread oprator
 // let arr =[1,2,3,{a:5},{id:4}]
 // console.log(arr.indexOf({a:5}));
- 
+
 // let car = ["a","b","c","d"];
 // // car.slice(1,3)
 // console.log(car.splice(1,0),car);
@@ -294,9 +343,9 @@ console.log(employeeWithHighest)
 
 // function mulit(){
 //     var a=10;
-   
+
 //     function printA(){
-      
+
 //         console.log(a);     //50
 //     }
 //     function printB(){
@@ -318,7 +367,7 @@ console.log(employeeWithHighest)
 //     if (b.includes(a[i]))
 //     continue;
 //     b.push(a[i]);
-   
+
 // }
 // console.log(b);
 
@@ -329,7 +378,7 @@ console.log(employeeWithHighest)
 
 // default 
 // function av(a,b){
-  
+
 // let c=a*b
 
 // }
@@ -631,24 +680,80 @@ document.getElementById("btn").remove();
 // let a1=[1,2,3,4,5];
 // let a2=[1,2,3,4,5]
 // console.log(a1===a2);
-  
+
+
+
+//print vowel after 2sec
+
 /*
+function printv(alpha,time){
+    setTimeout(()=>{
+        console.log(alpha);
+        
 
-home work 
+    },time)
+}
+printv("a",1000);
+printv("e",1000);
+printv("i",1000);
+printv("o",1000);
+printv("u",1000);
 
+*/
 
-// function printv(alpha,time){
-//     setTimeout(()=>{
-//         console.log(alpha);
+/*
+// Q.  print vowel after 2sec
+setTimeout(function(){
+    let arr=["a","e","i","o","u"]
+    for(let i=0;i<arr.length;i++){
+        console.log(arr[i]);
+    }
+},2000)
+*/
 
-//     },time)
-// }
-// printv("a",5000);
+//callback hell
 
+//home work
 
 // a-5sec
 // e -4
 // i -3
 // o-2
 // u-1
+/*by normal function
+setTimeout(function () {
+    console.log("a");
+    setTimeout(function () {
+        console.log("e");
+        setTimeout(function () {
+            console.log("i");
+            setTimeout(function () {
+                console.log("o");
+                setTimeout(function () {
+                    console.log("u");
+                }, 1000);
+            }, 2000);
+        }, 3000);
+    }, 4000);
+}, 5000);
+*/
+/* //by arrow function
+function vowels(){
+    setTimeout(()=>{
+        console.log("a");
+        setTimeout(()=>{
+            console.log("e");
+            setTimeout(()=>{
+                console.log("i");
+                setTimeout(()=>{
+                    console.log("o");
+                    setTimeout(()=>{
+                        console.log("u");
+                    },1000)
+                },2000)
+            },3000)
+        },4000)
+    },5000)
+}
+vowels()
 */
