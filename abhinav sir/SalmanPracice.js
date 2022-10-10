@@ -1662,3 +1662,5 @@ console.log(Math.max(...arr));//5000
 
 console.log(Math.pow(15,2));//225
 */
+
+

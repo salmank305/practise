@@ -757,3 +757,59 @@ function vowels(){
 }
 vowels()
 */
+
+
+// promises
+//  function printVowel(char ,timOut){
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         console.log(char);
+//         resolve();
+//     },timOut)
+//   })
+//  }
+//  printVowel('a',5000)
+//  .then( printVowel('e',4000))
+
+
+
+// hoist
+
+// function codeHoist(){
+// a = 10;
+//     let b = 50;
+// }
+// codeHoist();
+ 
+// console.log(a); // 10
+// console.log(b);
+
+//let example(global)
+// console.log(b);
+// let b='Mukul Latiyan'; 
+
+
+// var code (global)
+// console.log(a); // undefined
+// var a = 'Mukul Latiyan';
+// console.log("fsffs")
+// let a;
+// console.log(a);
+// let a=100;
+
+// let a;
+// console.log(a);
+
+
+
+// api feaching//
+
+
+// async function fetching(){
+//     let response = await fetch("https://reqres.in/api/users?page=2");
+//     let data = await response.json();
+//     console.log(data.data);
+// }
+
+
+// fetching();

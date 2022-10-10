@@ -1,1 +1,1 @@
- return arg1,arg2;
+     // console.log(char);
