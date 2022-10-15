@@ -799,8 +799,19 @@ vowels()
 
 // let a;
 // console.log(a);
-
-
+/*
+printVowel("A", 5000, ()=>{
+    printVowel("E", 4000, ()=>{
+        printVowel("I", 3000, ()=>{
+            printVowel("O", 2000, ()=>{
+                printVowel("U", 1000, () =>{ 
+                    console.log("END")
+                })
+            })
+        })
+    })
+})
+*/
 
 // api feaching//
 
@@ -813,3 +824,88 @@ vowels()
 
 
 // fetching();
+
+/*
+// Memoization: Memoization is a technique for speeding up applications by caching the results of expensive function calls and returning them when the same inputs are used again.
+function salutation() {
+    let name = 'salman';
+  
+    function greet() {
+        console.log(`Hello ${name}!`);
+    }
+    return greet;
+}
+  
+let wish = salutation();
+wish()
+*/
+
+
+
+// var a=10; //undefine 
+// var b=20; //undefine 
+// function salman(){
+//     console.log(a);
+
+// }
+// salman();
+
+
+// write a class constructor to create objects
+
+// object formst {name:xyz, getname(): function}
+
+// class bike {
+//     constructor(brand){
+        
+//     }
+// }
+// { let a=1
+//     let b=true
+//     console.log(a==b)
+//     console.log(a===b)
+//     }
+
+
+
+
+
+
+// function checkCanIVote(time,data) {
+//      return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         if(data>=18){ 
+//             // console.log("You can vote");
+//         resolve("You can vote");
+//         }else{
+//             // console.log(data);
+//             reject('You can not vote')
+//         }
+//     },time)
+//   })
+// }
+// checkCanIVote(200, 70). then(data=>{
+// console. log(data) // prints 'You can vote'
+// }).catch((err)=>{
+// console.log(err) // does not do anything
+// })
+// checkCanIVote(200, 16). then(data=>{
+// console. log(data) // does not do anything
+// }).catch((err)=>{
+// console.log(err) // prints 'You can not vote'
+//  })
+
+
+
+// function printName(a,b){
+//     console.log(this.fn+" "+this.ln,a,b);
+// }
+// let obj={
+//     fn:"salman",
+//     ln:"khatik",
+    
+// }
+// printName.call(obj,10,20)
+
+// Function.prototype.mycall=12
+// console.log(printName.prototype);

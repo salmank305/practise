@@ -841,6 +841,8 @@ function structure(a,b,...c){   // rest parameter / rest operator
 }
 structure(1,2,3,4,4,5,6,7, "salman");
 
+*/
+/*
 function rest(a,b,...c){
     return [a,b,c];           
 }
@@ -1540,3 +1542,172 @@ console.log("HELOO")
 
     
 //Promises : pending, fulfilled , rejected
+
+////////////////////////////////////////////////////lec 13 ////////////////////////////////////////
+
+//function checkCanIVote(time,data) {
+    //     // return the output using return keyword
+    //     // do not console.log it
+    //     return new Promise((resolve,reject)=>{
+    //         setTimeout(()=>{
+    //             if(data>=18){ 
+    //                 // console.log("You can vote");
+    //                 resolve("You can vote");
+    //             }else{
+    //                 // console.log("You can not vote");
+    //                 reject('You can not vote')
+    //             }
+    //         },time)
+    //   })
+    // }
+    
+    // checkCanIVote(2000, 70)
+    //     .then((data)=>{
+    //         console.log(data) // prints 'You can vote'
+    //     })
+    //     .catch((err)=>{
+    //         console.log(err) // does not do anything
+    //     })
+    
+    
+    // checkCanIVote(2000, 16)
+    //     .then((data)=>{
+    //         console.log(data) // does not do anything
+    //     }).catch((err)=>{
+    //         console.log(err) // prints 'You can not vote'
+    //     })
+    
+    
+    
+    
+    // fetch 
+    // fetch is a function which allows you to access and retrieve data from the API.
+    // imp point : you will have to convert the data into json format first, in order to access it
+    
+    // function showImage(){
+    //     fetch("https://www.breakingbadapi.com/api/characters?limit=2")
+    //     .then((res)=>res.json())
+    //     .then((data)=>{
+    //         console.log(data)
+    //         const imageTest = document.createElement("img");
+    //         imageTest.setAttribute("src", data[0].img);
+    //         document.getElementById("container").appendChild(imageTest)
+    //     })
+    // }
+    
+    
+    
+    // axios.get()
+
+    
+////////////////////////////////////////////////////////////// lec 14 ///////////////////////////
+//generator functions, classes in JS
+//the ones which can generate multiple and differents when
+//being executed multiple times.
+//star
+//yeild
+//next = returns you an object having value and done keys
+
+//react redux saga middleware
+//function* numbers(){
+//     yield 10;
+//     yield 20;
+//     yield 30;
+//     return 40;
+//}
+
+// const a = numbers();
+
+// console.log(a.next());
+// console.log(a.next());
+// console.log(a.next());
+// console.log(a.next());
+// console.log(a.next());
+
+
+// a normal function can return only one single value
+// function add(){
+//     return 10;
+// }
+
+
+//js classes
+//static methods and properties
+
+class Parent {
+    //instantiate the variables, 
+    static num = 10;
+    // static methods should always return a value
+    // when you do not want to share these properties with the instances.
+    static xy(num){
+        return num;
+    }
+
+    constructor(x, y){
+        this.x = x;
+        this.y = y
+    }
+
+    getArea = () => {
+        return this.x * this.y;
+    }
+}
+
+
+//inheritance = when you want to inherit the properties of 
+//parent class you will use extends keyword
+//2 types of inheritance - class based = child class will be inheriting the properties from the parent class
+//prototypal inheritance = variables will be inheriting the properties from their parent constructor function.
+
+class Child extends Parent{
+
+}
+
+
+const box1 = new Parent(10,20); //instance object
+const value = box1.getArea();
+console.log(Parent.num,Child.num,Child.xy(20), Parent.xy(Parent.num));
+console.log("Area", value, box1.x, box1.y, box1);
+
+
+// const child1 = new Child(12, 12);
+// console.log(child1.getArea());;
+
+
+// let arr = [1,2];
+// console.log(arr);
+
+
+//getters and setters.
+// it will be defined as a function, and when you are accessing it 
+// that time you dont have to invoke it like a function rather than 
+// that you can directly access it like a normal property
+
+// initially when object is created getter function will be undefined 
+// later when that property will be accessed that time it will get its actual value 
+
+// let obj1 = {
+//     id : 1,
+//     name : "John",
+//     get latest(){
+//         console.log("HEY eveyrone, keep quiet !!", this.name);
+//     },
+//     set latest2(x){
+//         return this.name = x;
+//     }
+// }
+
+// obj1.latest
+// console.log(obj1);
+
+// obj1.latest2 = "Doe";
+// console.log(obj1);
+
+//setter
+// this function must will be taking the param
+// to execute setter function , you will have to initialize it , that will become default
+// param of setter 
+
+
+
+// decorators in js 

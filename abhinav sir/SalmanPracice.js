@@ -1663,4 +1663,63 @@ console.log(Math.max(...arr));//5000
 console.log(Math.pow(15,2));//225
 */
 
+///////////////////////////////////// lec =>16 js string js date//////////////////////////////
+/* 
+let statement ='this is salman'
+ let newStatment =statement.replace("this",'he')
+ console.log(newStatment);
+  */
 
+ /*
+ let username="sAlmAN"
+ let newUsername=username.toUpperCase();
+ console.log(newUsername);
+ */
+ 
+ /*
+ let statement ='tHiS is salman'
+ let newUsername=statement.toUpperCase();
+ let person =newUsername.replace("THIS",'he')
+ console.log(person);
+ */
+
+
+ /*
+  // trimmed
+ let str = "        hi??????????"
+ console.log(str);
+ let trimmed=str.trim();
+ console.log(trimmed);/// rerove sapace
+*/
+
+/*
+// explore search
+*/
+
+
+//Date 
+// let todaysDate= new Date();
+// console.log(todaysDate);
+
+// let paasedDate = new Date(2020,6,30,11,30,45,20) // year,month(0 to 11),date,hr,min,sec,milisec
+// console.log(paasedDate);
+// let paasedDate1 = new Date(2020,6,30)
+// console.log(paasedDate1);
+
+
+
+// //it count milisec from 1 jan 1970
+// let milisec =new Date(50000000);
+// console.log(milisec);
+
+// function add(){
+//     let a=20;
+//     a=10+;
+//     console.log(a);
+// }
+
+
+
+//////////////////////////////////// lec =>17 js prototype///////////////////
+
+// prototype:=>.
