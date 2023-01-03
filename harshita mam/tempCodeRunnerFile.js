@@ -1,3 +1,10 @@
-}catch(error){
-//     console.log("Catch block");   // this block work bcz b is not defined 
-// }
+let a = 20;
+
+function outer(){
+    function inner (){
+        console.log(a);
+    }
+    inner()
+}
+
+outer()

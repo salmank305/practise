@@ -1723,3 +1723,161 @@ let statement ='this is salman'
 //////////////////////////////////// lec =>17 js prototype///////////////////
 
 // prototype:=>.
+/*
+let arr=[];
+arr.push(1);
+console.log(arr);
+// console.log(Array.prototype);
+
+Array.prototype.mypush="salman"
+console.log(arr.mypush);
+*/
+/*
+let obj ={
+    name : "salman",
+    id : 2
+}
+
+let obj2={
+   school :"ns"
+}
+*/
+
+/*
+function Person(name,role){
+    this.name=name,
+    this.role=role;
+    this.printDetails=function(){
+        console.log(("details are " +this.name +" "+this.role));
+    }
+    // this.CalculateSalary=function(){
+    //         if (this.role=='admin'){
+    //             return 1000
+    //         }
+    //         if (this.role=='user'){
+    //             return 2000
+    //         }
+    //     }
+}
+Person.prototype.CalculateSalary=function(){
+    if (this.role=='admin'){
+        return 1000
+    }
+    if (this.role=='user'){
+        return 2000
+    }
+}
+
+// Object.prototype.CalculateSalary=function(){
+//     if (this.role=='admin'){
+//         return 10
+//     }
+//     if (this.role=='user'){
+//         return 20
+//     }
+// }
+
+
+let salman =new Person('salman','admin');
+console.log(salman);
+console.log(salman.name);
+salman.printDetails()
+console.log(salman.CalculateSalary());
+
+let khatik =new Person('khatik','user');
+console.log(khatik);
+console.log(khatik.name);
+khatik.printDetails()
+console.log(khatik.CalculateSalary());
+*/
+
+/*
+// Employee se CalculateSalary ko acces krna h
+function Person(name){
+    this.name=name,
+  
+    this.printDetails=function(){
+        console.log(("details are " +this.name ));
+    }
+    // this.CalculateSalary=function(){
+    //         if (this.role=='admin'){
+    //             return 1000
+    //         }
+    //         if (this.role=='user'){
+    //             return 2000
+    //         }
+    //     }
+}
+Person.prototype.CalculateSalary=function(){
+    if (this.role=='admin'){
+        return 1000
+    }
+    if (this.role=='user'){
+        return 2000
+    }
+}
+ 
+Person.prototype.someProperty="somthing"
+// Object.prototype.CalculateSalary=function(){
+//     if (this.role=='admin'){
+//         return 10
+//     }
+//     if (this.role=='user'){
+//         return 20
+//     }
+// }
+
+
+let salman =new Person('salman');
+console.log(salman.someProperty);
+console.log(salman.CalculateSalary());
+
+let khatik =new Person('khatik');
+console.log(khatik);
+console.log(khatik.CalculateSalary());
+
+function Employee(role){
+this.role=role
+}
+
+// Employee.prototype.someProperty="from employee prototype"//by using this we overwrite the employee proprty
+Employee.prototype=Object.create(Person.prototype)// by usuing this we acees the person property
+let akash = new Employee('student')
+console.log(akash.role);
+console.log(akash.someProperty);
+
+*/
+/////////////////////////////////////////// lec =>18  //////////////////////////////////////
+
+
+// let str = "I am a robot";
+// let str_new = str.split(' ');
+// let c=str_new.length-1;
+
+// let p=setInterval(() => {
+    
+//     if(c<0){
+//       clearInterval(p);  
+//       return;
+//     }
+//     console.log(str_new[c--])
+//  },1000);
+
+function vowels(){
+    setTimeout(()=>{
+        console.log("robot");
+        setTimeout(()=>{
+            console.log("a");
+            setTimeout(()=>{
+                console.log("am");
+                setTimeout(()=>{
+                    console.log("i");
+                    setTimeout(()=>{
+                        console.log("d");
+                    },1000)
+                },1000)
+            },1000)
+        },1000)
+    },1000)
+}
+vowels()

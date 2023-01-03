@@ -1,1 +1,1 @@
-     // console.log(char);
+salutation()

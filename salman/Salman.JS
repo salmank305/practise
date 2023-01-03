@@ -825,20 +825,20 @@ printVowel("A", 5000, ()=>{
 
 // fetching();
 
-/*
+
 // Memoization: Memoization is a technique for speeding up applications by caching the results of expensive function calls and returning them when the same inputs are used again.
-function salutation() {
-    let name = 'salman';
+// function salutation() {
+//     let name = 'salman';
   
-    function greet() {
-        console.log(`Hello ${name}!`);
-    }
-    return greet;
-}
+//     function greet() {
+//         console.log(`Hello ${name}!`);
+//     }
+//     return greet;
+// }
   
-let wish = salutation();
-wish()
-*/
+// let wish = salutation();
+// wish()
+
 
 
 
@@ -909,3 +909,135 @@ wish()
 
 // Function.prototype.mycall=12
 // console.log(printName.prototype);
+
+
+
+
+
+
+
+// function foo(){
+//     let x=y=0;  
+//     x++;  
+//     y++;
+//     return x;
+// }
+// console.log(foo(),typeof x,typeof y);
+
+
+
+//  console.log(1 && 0 === 1 ||0);
+
+
+
+//  function fo(){
+//     return 
+// {
+//     message:"hello..."
+// }
+// }
+// console.log(fo());
+
+
+
+// let arr = [1,2,3,4,5]
+//  function printArr(arr ,timOut){
+//   return new Promise((resolve)=>{
+//     setTimeout(()=>{
+//         for( i=0;i<arr.length;i++)
+//         console.log(arr[i]);
+//         resolve();
+//     },timOut)
+//   })
+//  }
+//  printArr(arr,2000).then
+
+
+//  let arr = [1,2,3,4,5]
+//  function printArr(arr ,timOut){
+//   return new Promise((resolve)=>{
+//     setTimeout(()=>{
+//         console.log(arr);
+//         resolve();
+//     },timOut)
+//   })
+//  }
+//  printArr(arr,5000).then
+
+
+// Arrow function
+// let sumOfTwoNumbers = (a, b) => a + b;
+// console.log(10, 20); // Output 30
+
+// const arr = [1,2,3,4,45,5,6,6,4,5,46];
+// let arr2 = [...arr,8,6];
+// console.log(arr2);
+// console.log(arr);
+
+
+// function structure(a,b,...c){   // rest parameter / rest operator
+//     console.log(a,b,c);
+// }
+// structure(1,2,3,4,4,5,6,7,"salman");
+
+
+// function rest(a,b,...c){
+//     return [a,b,c];           
+// }
+// let ans = rest(1,2,3,4,65,6,"salman")
+// console.log(ans);
+
+
+
+// function vowels(){
+//     setTimeout(()=>{
+//         console.log("a");
+//         setTimeout(()=>{
+//             console.log("e");
+//             setTimeout(()=>{
+//                 console.log("i");
+//                 setTimeout(()=>{
+//                     console.log("o");
+//                     setTimeout(()=>{
+//                         console.log("u");
+//                     },1000)
+//                 },2000)
+//             },3000)
+//         },4000)
+//     },5000)
+// }
+// vowels()
+
+
+
+// call back hell
+// function printLetter(){
+//     setTimeout(()=>{
+//         console.log('a');
+//         setTimeout(()=>{
+//             console.log('b');
+//             setTimeout(()=>{
+//                 console.log('c');
+                
+//             })
+            
+//         })
+
+//     })
+// }
+// printLetter()
+
+
+/*
+let str=10;
+let display = str;
+
+function fun(a){
+    str= str+a;
+    display = str;  
+
+}
+fun(5)
+console.log(display);
+*/
+
